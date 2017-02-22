@@ -143,6 +143,7 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
 
+    display: inline-block;
     width: 30vh;
     height: 25vh;
     margin: 0 auto;
@@ -175,16 +176,6 @@ h1 {
     url("../img/siren.png");
 }
 
-.social-icon {
-    display: inline-block;
-    margin: 10px auto;
-    padding: 10px;
-    text-align: center;
-    color: white;
-    opacity: 0.7;
-    min-width: 92px;
-}
-
 .reach-me p {
     margin: 0;
 }
@@ -205,8 +196,27 @@ h1 {
     background-color: #016982;
 }
 
+.social-icon {
+    margin: 10px 10px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    opacity: 0.7;
+    min-width: 92px;
+    display: inline-block;
+}
 
+@media screen and (max-width: 550px) {
+    .social-icon-no-stack {
+        display: block;
+    }
+}
 
+@media screen and (min-width: 551px) {
+    .social-icon-no-stack {
+        display: inline-flex;
+    }
+}
 
 
 
