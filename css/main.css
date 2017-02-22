@@ -99,7 +99,11 @@ h1 {
     font-size: 9vh;
 }
 
-.header-text {
+.body-content {
+    overflow: auto;
+}
+
+.name-text {
     display: block;
     text-align: center;
     opacity: 0; 
@@ -125,19 +129,6 @@ h1 {
     animation-delay: 3s;
 }
 
-.footer {
-    display: block;
-    position: absolute;
-    margin: auto;
-    bottom: 0;
-    width: 100%;
-    z-index: 100;
-}
-
-.resume {
-    text-align: center;
-}
-
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; transform: translateX(0vw); }
@@ -161,24 +152,58 @@ h1 {
 .project h5 {
     color: white;
     margin: 0;
-    padding: 20px;
+    padding: 1vh;
     font-size: 3vh;
     float:left;
+}
+
+.project p {
+    color: white;
+    margin: 0;
+    padding-left: 1vh;
+    font-size: 2vh;
+    position: absolute;
+    bottom: 1vh;
 }
 
 .siren {
     background-image: 
     linear-gradient(
-      rgba(155, 0, 0, 1.0),
-      rgba(155, 0, 0, -0.5)
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
     ),
     url("../img/siren.png");
 }
 
+.social-icon {
+    display: inline-block;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    opacity: 0.7;
+    min-width: 92px;
+}
 
+.reach-me p {
+    margin: 0;
+}
 
+.linkedin {
+    background-color: #2270ea;
+}
 
+.instagram {
+    background-color: #750182;
+}
 
+.github {
+    background-color: #000;
+}
+
+.resume {
+    background-color: #016982;
+}
 
 
 
